@@ -1,5 +1,5 @@
 #RXTX Maven Wrapper
-A simple Bash script to download, wrap and install RXTX library as a Maven artifact in local repository. The artifact includes jar, sources and native .so library (Linux x64 only)
+A simple Bash script to download (from http://rxtx.qbang.org/wiki/index.php/Download), wrap and install RXTX library as a Maven artifact in local repository. The artifact includes jar, sources and native .so library (Linux x64 only)
 
 #Usage
 
