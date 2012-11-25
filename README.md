@@ -1,9 +1,9 @@
 #RXTX Maven Wrapper
-A simple Bash script to download, wrap and and install RXTX library as a Maven artifact in local repository. The artifact includes jar, sources and binary .so (Linux x64 only)
+A simple Bash script to download, wrap and install RXTX library as a Maven artifact in local repository. The artifact includes jar, sources and native .so library (Linux x64 only)
 
 #Usage
 
-The java library can be simply used as any regular Maven dependency:
+The java library can be simply used as any other regular Maven dependency:
 
 pom.xml
 
@@ -19,7 +19,7 @@ pom.xml
 
 To add the native library to your project you have to do the following:
 
-Add file src/main/assemblies/distribution.xml:
+1. Add file src/main/assemblies/distribution.xml:
 
     <dependencySets>
         ...
@@ -34,7 +34,7 @@ Add file src/main/assemblies/distribution.xml:
         ...
     </dependencySets>
 
-Add to the project's pom.xml:
+2. Add to the project's pom.xml:
 
     <dependencies>
         ...
