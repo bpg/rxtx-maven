@@ -8,18 +8,18 @@ The java library can be simply used as any other regular Maven dependency:
 pom.xml
 
     <dependencies>
-        ...
         <dependency>
             <groupId>org.rxtx</groupId>
             <artifactId>rxtx</artifactId>
             <version>2.2pre2</version>
         </dependency>
-        ...
     </dependencies>
 
 To add the native library to your project you have to do the following:
 
-1. Add file src/main/assemblies/distribution.xml:
+1. Add file 
+
+src/main/assemblies/distribution.xml
 
     <dependencySets>
         ...
@@ -34,10 +34,12 @@ To add the native library to your project you have to do the following:
         ...
     </dependencySets>
 
-2. Add to the project's pom.xml:
+2. Add to the project's description
+
+pom.xml
 
     <dependencies>
-        ...
+         ...
         <dependency>
             <groupId>org.rxtx</groupId>
             <artifactId>rxtx</artifactId>
@@ -52,7 +54,7 @@ To add the native library to your project you have to do the following:
 
     <build>
         <plugins>
-            ...
+            ....
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
